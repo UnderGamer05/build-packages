@@ -60,7 +60,6 @@ proot-distro login ubuntu <<-EOF
   chmod +x Godot_v4.2.2-stable_linux.arm32
 
   mkdir -p ~/.config/godot/
-  mv ~/build-game/editor_settings-4.tres ~/.config/godot
+  mv ~/build-game/editor_settings-4.tres ~/.config/godot/
 EOF
 
-proot-distro login ubuntu

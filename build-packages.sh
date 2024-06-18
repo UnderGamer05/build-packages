@@ -43,19 +43,23 @@ proot-distro install ubuntu
 proot-distro login ubuntu <<-EOF
   apt update
   apt upgrade -y
+
   apt install wget unzip libfontconfig1 libx11-6 libxcursor1 libxinerama1 libxrandr2 libxrender1 git -y
 
   git clone https://github.com/UnderGamer05/build-game
   
   cd build-game
-  
   chmod +x build-game.sh
   
   mkdir -p ~/godot
   cd ~/godot
+
   wget https://downloads.tuxfamily.org/godotengine/4.2.2/Godot_v4.2.2-stable_linux.arm32.zip
+
   unzip Godot_v4.2.2-stable_linux.arm32.zip
   chmod +x Godot_v4.2.2-stable_linux.arm32
-  cd ~/.config/godot
+
+  mkdir -p ~/.config/godot/
+  mv ~/build-game/editor_settings-4.tres ~/.config/godot
 EOF
 

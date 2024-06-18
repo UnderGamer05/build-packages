@@ -1,6 +1,8 @@
 
 #!/bin/bash
 
+cd ~
+
 termux-setup-storage
 
 pkg install wget unzip openjdk-17 which proot-distro -y
@@ -43,7 +45,10 @@ proot-distro login ubuntu <<-EOF
   apt upgrade -y
   apt install wget unzip libfontconfig1 libx11-6 libxcursor1 libxinerama1 libxrandr2 libxrender1 git -y
 
-  git clone https://github.com/UnderGamer05/build-game.git
+  git clone https://github.com/UnderGamer05/build-game
+  
+  cd build-game
+  
   chmod +x build-game.sh
   
   mkdir -p ~/godot

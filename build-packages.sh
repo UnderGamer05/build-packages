@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 cd ~
@@ -62,4 +61,14 @@ proot-distro login ubuntu <<-EOF
   mkdir -p ~/.config/godot/
   mv ~/build-game/editor_settings-4.tres ~/.config/godot/
 EOF
+
+echo " "
+echo "\033[0;32m All Packages Run Successful. \033[0m" 
+echo "\033[0;32m Now you can Build Your Game. \033[0m" 
+echo "You don't need to run this again."
+
+echo " "
+echo "run `proot-distro login ubuntu` to use ubunu environment."
+echo "then once you login run `~/build-game/build-game.sh`"
+echo "Then provide your project `path` and `name`."
 

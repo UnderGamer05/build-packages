@@ -3,8 +3,6 @@
 
 termux-setup-storage
 
-pkg update && pkg upgrade -y
-
 pkg install wget unzip openjdk-17 which proot-distro -y
 
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))

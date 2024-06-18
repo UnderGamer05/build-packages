@@ -26,7 +26,7 @@ source ~/.profile
 chmod +x $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
 sdkmanager --update
-sdkmanager "platforms;android-33" "platform-tools"
+sdkmanager "platforms;android-33" "platform-tools" -y
 sdkmanager "build-tools;34.0.0"
 
 rm commandlinetools.zip
@@ -63,3 +63,4 @@ proot-distro login ubuntu <<-EOF
   mv ~/build-game/editor_settings-4.tres ~/.config/godot
 EOF
 
+proot-distro login ubuntu

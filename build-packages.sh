@@ -56,6 +56,6 @@ proot-distro login ubuntu <<-EOF
   wget https://downloads.tuxfamily.org/godotengine/4.2.2/Godot_v4.2.2-stable_linux.arm32.zip
   unzip Godot_v4.2.2-stable_linux.arm32.zip
   chmod +x Godot_v4.2.2-stable_linux.arm32
-  ~/godot/Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless || echo "Test Run Completed"
+  cd ~/.config/godot
 EOF
 

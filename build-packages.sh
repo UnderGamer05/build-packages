@@ -59,6 +59,7 @@ proot-distro login ubuntu <<-EOF
 
   mkdir -p ~/.config/godot/
   mv ~/build-game/editor_settings-4.tres ~/.config/godot/
+  exit
 EOF
 
 echo " "

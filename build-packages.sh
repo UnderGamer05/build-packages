@@ -6,8 +6,6 @@ termux-setup-storage
 
 pkg install wget unzip openjdk-17 which proot-distro -y
 
-export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
-
 wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O commandlinetools.zip
 unzip commandlinetools.zip -d $HOME/android-sdk
 
@@ -65,7 +63,7 @@ proot-distro login ubuntu <<-EOF
 EOF
 
 echo " "
-echo "All Packages Run Successful." 
+echo "Run Successful." 
 echo "Now you can Build Your Game." 
 echo "You don't need to run this again."
 
@@ -73,4 +71,6 @@ echo " "
 echo "run 'proot-distro login ubuntu' to use ubunu environment."
 echo "then once you login run '~/build-game/build-game.sh'"
 echo "Then provide your project 'path' and 'name'."
+
+echo ""
 

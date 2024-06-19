@@ -56,6 +56,7 @@ proot-distro login ubuntu <<-EOF
 
   unzip Godot_v4.2.2-stable_linux.arm32.zip
   chmod +x Godot_v4.2.2-stable_linux.arm32
+  rm Godot_v4.2.2-stable_linux.arm32.zip
 
   mkdir -p ~/.config/godot/
   mv ~/build-game/editor_settings-4.tres ~/.config/godot/

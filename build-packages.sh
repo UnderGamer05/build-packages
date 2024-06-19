@@ -62,6 +62,8 @@ proot-distro login ubuntu <<-EOF
   exit
 EOF
 
+cd ~
+
 echo " "
 echo "Run Successful." 
 echo "Now you can Build Your Game." 
@@ -70,7 +72,7 @@ echo "You don't need to run this again."
 echo " "
 echo "run 'proot-distro login ubuntu' to use ubunu environment."
 echo "then once you login run '~/build-game/build-game.sh'"
-echo "Then provide your project 'path' and 'name'."
+echo "Then provide your project path and game name'."
 
 echo ""
 echo "Recommend to restart the Termux then continue"

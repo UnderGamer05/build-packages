@@ -25,7 +25,7 @@ source ~/.profile
 chmod +x $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager
 
 sdkmanager --update
-sdkmanager "platforms;android-33" -y
+sdkmanager "platforms;android-33"
 sdkmanager "platform-tools" "build-tools;34.0.0"
 
 rm commandlinetools.zip

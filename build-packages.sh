@@ -73,4 +73,5 @@ echo "then once you login run '~/build-game/build-game.sh'"
 echo "Then provide your project 'path' and 'name'."
 
 echo ""
+echo "Recommend to restart the Termux then continue"
 

@@ -63,6 +63,7 @@ proot-distro login ubuntu <<-EOF
 EOF
 
 cd ~
+clear
 
 echo " "
 echo "Run Successful." 

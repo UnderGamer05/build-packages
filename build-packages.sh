@@ -65,7 +65,6 @@ EOF
 cd ~
 clear
 
-echo " "
 echo "Run Successful." 
 echo "Now you can Build Your Game." 
 echo "You don't need to run this again."
@@ -77,4 +76,5 @@ echo "Then provide your project path and game name'."
 
 echo ""
 echo "Recommend to restart the Termux then continue"
+echo " "
 

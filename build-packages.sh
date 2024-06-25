@@ -50,7 +50,7 @@ proot-distro login ubuntu <<-EOF
   mkdir -p ~/godot
   cd ~/godot
 
-  wget https://downloads.tuxfamily.org/godotengine/4.2.2/Godot_v4.2.2-stable_linux.arm32.zip
+  wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm32.zip
 
   unzip Godot_v4.2.2-stable_linux.arm32.zip
   chmod +x Godot_v4.2.2-stable_linux.arm32

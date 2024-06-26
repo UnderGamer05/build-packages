@@ -43,11 +43,6 @@ proot-distro login ubuntu <<-EOF
   apt upgrade -y
 
   apt install wget unzip libfontconfig1 libx11-6 libxcursor1 libxinerama1 libxrandr2 libxrender1 git -y
-
-  git clone https://github.com/UnderGamer05/build-game.git
-  
-  cd build-game
-  chmod +x build-game.sh
   
   mkdir -p ~/godot
   cd ~/godot
@@ -74,7 +69,12 @@ proot-distro login ubuntu <<-EOF
 
   fi
 
-  mv ~/build-game/editor_settings-4.tres ~/.config/godot/
+  git clone https://github.com/UnderGamer05/build-game.git
+  
+  cd build-game
+  chmod +x build-game.sh
+
+  mv editor_settings-4.tres ~/.config/godot
   exit
 EOF
 

@@ -54,9 +54,9 @@ proot-distro login ubuntu <<-EOF
 
   unzip Godot_v4.2.2-stable_linux.arm32.zip
   chmod +x Godot_v4.2.2-stable_linux.arm32
-  rm Godot_v4.2.2-stable_linux.arm32.zip
+  rm -rf Godot_v4.2.2-stable_linux.arm32.zip
   
-  ~/godot/Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
+  ./Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
 
   mv ~/build-game/editor_settings-4.tres ~/.config/godot/
   exit

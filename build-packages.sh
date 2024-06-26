@@ -42,7 +42,7 @@ proot-distro login ubuntu <<-EOF
 
   apt install wget unzip libfontconfig1 libx11-6 libxcursor1 libxinerama1 libxrandr2 libxrender1 git -y
 
-  git https://github.com/UnderGamer05/build-game.git
+  git clone https://github.com/UnderGamer05/build-game.git
   
   cd build-game
   chmod +x build-game.sh

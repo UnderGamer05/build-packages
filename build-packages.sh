@@ -54,23 +54,23 @@ proot-distro login ubuntu <<-EOF
   
   if [ "$arch" == "aarch64" ]; then
 
-  wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm64.zip 
+    wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm64.zip 
 
-  unzip Godot_v4.2.2-stable_linux.arm64.zip
-  chmod +x Godot_v4.2.2-stable_linux.arm64
-  rm -rf Godot_v4.2.2-stable_linux.arm64.zip
+    unzip Godot_v4.2.2-stable_linux.arm64.zip
+    chmod +x Godot_v4.2.2-stable_linux.arm64
+    rm -rf Godot_v4.2.2-stable_linux.arm64.zip
   
-  ./Godot_v4.2.2-stable_linux.arm64 --export-release "Android" ./name.apk --headless
+    ./Godot_v4.2.2-stable_linux.arm64 --export-release "Android" ./name.apk --headless
 
   else
   
-  wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm32.zip
+    wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm32.zip
 
-  unzip Godot_v4.2.2-stable_linux.arm32.zip
-  chmod +x Godot_v4.2.2-stable_linux.arm32
-  rm -rf Godot_v4.2.2-stable_linux.arm32.zip
+    unzip Godot_v4.2.2-stable_linux.arm32.zip
+    chmod +x Godot_v4.2.2-stable_linux.arm32
+    rm -rf Godot_v4.2.2-stable_linux.arm32.zip
   
-  ./Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
+    ./Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
 
   fi
 

@@ -2,8 +2,6 @@
 
 cd ~
 
-arch=$(uname -m)
-
 termux-setup-storage
 
 pkg install wget unzip openjdk-17 which proot-distro -y
@@ -47,27 +45,13 @@ proot-distro login ubuntu <<-EOF
   mkdir -p ~/godot
   cd ~/godot
   
-  if [ "$arch" == "aarch64" ]; then
+  wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm32.zip
 
-    wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm64.zip 
-
-    unzip Godot_v4.2.2-stable_linux.arm64.zip
-    chmod +x Godot_v4.2.2-stable_linux.arm64
-    rm -rf Godot_v4.2.2-stable_linux.arm64.zip
+  unzip Godot_v4.2.2-stable_linux.arm32.zip
+  chmod +x Godot_v4.2.2-stable_linux.arm32
+  rm -rf Godot_v4.2.2-stable_linux.arm32.zip
   
-    ./Godot_v4.2.2-stable_linux.arm64 --export-release "Android" ./name.apk --headless
-
-  else
-  
-    wget https://github.com/godotengine/godot-builds/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.arm32.zip
-
-    unzip Godot_v4.2.2-stable_linux.arm32.zip
-    chmod +x Godot_v4.2.2-stable_linux.arm32
-    rm -rf Godot_v4.2.2-stable_linux.arm32.zip
-  
-    ./Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
-
-  fi
+  ./Godot_v4.2.2-stable_linux.arm32 --export-release "Android" ./name.apk --headless
 
   git clone https://github.com/UnderGamer05/build-game.git
   
@@ -86,9 +70,9 @@ echo "Now you can Build Your Game."
 echo "You don't need to run this again."
 
 echo " "
-echo "run 'proot-distro login ubuntu' to use ubunu environment."
-echo "then once you login run '~/build-game/build-game.sh'"
-echo "Then provide your project path and game name'."
+echo "run proot-distro login ubuntu to use ubunu environment."
+echo "then once you login run ~/build-game/build-game.sh"
+echo "Then provide your project path and game name."
 
 echo ""
 echo "Recommend to restart the Termux then continue"
